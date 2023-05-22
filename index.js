@@ -4,6 +4,7 @@ var gameStarted = false;
 $(document).on("keypress", function(event) {
     if (!gameStarted) {
         gameStarted = true;
+        $(".startButton").hide();
         gameSequence();
     }
 });
