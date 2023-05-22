@@ -68,3 +68,9 @@ footer {
     background-color: red;
     opacity: 0.8;
   }
+
+.startButton {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
