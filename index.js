@@ -8,6 +8,11 @@ $(document).on("keypress", function(event) {
     }
 });
 
+$(".startButton").on("click", function() {
+    gameSequence();
+    $(".startButton").hide();
+});
+
 
 var patternSequenceGame = [];
 var patternSequenceUser = [];
@@ -66,6 +71,7 @@ function gameOver() {
     patternSequenceGame = [];
     patternSequenceUser = [];
     level = 0;
+    $(".startButton").show();
 }
 
 
